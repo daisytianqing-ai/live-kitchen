@@ -1,55 +1,68 @@
-# Gemini Live Kitchen Sous-Chef
-    
-    ## Project Overview
-    The Gemini Live Kitchen Sous-Chef is a hands-free, voice-controlled kitchen assistant designed to guide users through recipes with real-time, multimodal interaction. It leverages Gemini's vision and voice capabilities to provide a seamless cooking experience, offering step-by-step instructions, safety alerts, and progress tracking.
-    
-    ## Key Features
-    - **Hands-Free Voice Control**: Navigate recipes, control timers, and ask questions using voice commands.
-    - **Real-Time Multimodal Interaction**: The assistant sees what you see and hears what you say, understanding ingredients and cooking progress through camera and microphone input.
-    - **Safety Alerts**: Get timely alerts for potential hazards like unattended cooking or incorrect ingredient usage.
-    - **Progress Tracking**: The assistant keeps track of your cooking steps and can provide summaries or next steps on demand.
-    
-    ## Tech Stack
-    - Gemini 1.5 Flash Live API
-    - React
-    - TypeScript
-    - Tailwind CSS
-    - Web Audio API
-    - Web Media API (Camera/Microphone)
-    
-    ## Architecture
-    Below is a high-level architecture diagram illustrating the user interaction flow:
-    ![Architecture Diagram](https://github.com/daisytianqing-ai/live-kitchen/blob/main/User%20Interaction%20with-2026-03-16-021824.png)
-    
-    ## Getting Started
-    To get the Gemini Live Kitchen Sous-Chef running locally:
-    
-    1.  **Clone the repository:**
-        ```bash
-        git clone https://github.com/daisytianqing-ai/live-kitchen.git
-        cd live-kitchen
-        ```
-    2.  **Install dependencies:**
-        ```bash
-        npm install
-        ```
-    3.  **Set up environment variables:**
-        Create a `.env` file in the root directory and add your Gemini API key:
-        ```
-        VITE_GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-        ```
-    4.  **Run the development server:**
-        ```bash
-        npm run dev
-        ```
-        Open your browser to the local address provided (usually `http://localhost:5173`).
-    
-    ## How to Test (For Judges)
-    Once the application is running:
-    
-    1.  Click the "Start" button and allow camera/microphone access.
-    2.  Try saying: "Let's start cooking".
-    3.  When prompted, show ingredients like flour, eggs, or milk to the camera for the assistant to identify.
-    4.  Follow the voice prompts and recipe steps provided by the assistant.
-    
-    
+<h1 align="center">🧑‍🍳 Gemini Live Kitchen Sous-Chef</h1>
+
+<p align="center">
+  <strong>Hands-free, multimodal culinary guidance powered by Gemini 1.5 Flash Live.</strong>
+</p>
+
+<p align="center">
+  <a href="https://aistudio.google.com/apps/e8ff3010-07c6-4169-89e5-c4c235cf08cd?showAssistant=true&showPreview=true">
+    <img src="https://img.shields.io/badge/Live-Demo-red?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo">
+  </a>
+</p>
+
+---
+
+## 📖 Introduction
+The **Gemini Live Kitchen Sous-Chef** is a real-time, voice-and-vision-activated assistant designed for the high-stakes environment of a home kitchen. By leveraging the **Gemini 1.5 Flash Live API**, it solves the "messy hands" dilemma, allowing chefs to advance recipes and receive safety warnings without ever touching a screen.
+
+## ✨ Features
+* **🎙️ Hands-Free Interaction:** Control the entire cooking flow using natural voice commands.
+* **👁️ Multimodal Vision:** Show your ingredients to the camera for automatic recognition.
+* **⚠️ Real-time Safety Alerts:** Proactive warnings about kitchen hazards (like knife safety).
+* **📉 Progress Tracking:** Seamlessly move through steps with verbal confirmation.
+
+## 🏗️ Architecture
+The system operates on a low-latency multimodal loop between the browser and Google Cloud:
+
+![Architecture Diagram](https://github.com/daisytianqing-ai/live-kitchen/blob/main/User%20Interaction%20with-2026-03-16-021824.png)
+
+## 🛠️ Tech Stack
+* **Language:** TypeScript
+* **Framework:** React
+* **AI Model:** Gemini 1.5 Flash Live API
+* **Styling:** Tailwind CSS
+* **Media:** Web Audio & Web Media APIs
+
+## 🚀 Getting Started
+
+### Prerequisites
+* Node.js (v18+)
+* Google AI Studio API Key
+
+### Installation & Setup
+1.  **Clone the repo**
+    ```bash
+    git clone [https://github.com/daisytianqing-ai/live-kitchen.git](https://github.com/daisytianqing-ai/live-kitchen.git)
+    cd live-kitchen
+    ```
+2.  **Install packages**
+    ```bash
+    npm install
+    ```
+3.  **Environment Config**
+    Create a `.env` file:
+    ```env
+    VITE_GEMINI_API_KEY=your_api_key_here
+    ```
+4.  **Run Development Server**
+    ```bash
+    npm run dev
+    ```
+
+---
+
+## 🧪 Testing Instructions (For Judges)
+1.  **Connect:** Click **Connect** and allow permissions.
+2.  **Initialize:** Say *"Let's start cooking"* to trigger the AI.
+3.  **Vision Test:** Show a vegetable to the camera and ask, *"What should I do with this?"*
+4.  **Flow Test:** Say *"Next step"* to see the instructions update.
