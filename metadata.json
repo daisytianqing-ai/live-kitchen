@@ -1,0 +1,5 @@
+{
+  "name": "Gemini Live Kitchen Sous-Chef",
+  "description": "A high-end, tablet-optimized kitchen assistant powered by Gemini Live for hands-free cooking.",
+  "requestFramePermissions": ["camera", "microphone"]
+}
